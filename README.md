@@ -1,6 +1,6 @@
-# Starter Kit
+# Leaderboard
 
-A [Sails](http://sailsjs.org), [Bootstrap](http://getbootstrap.com/), [AngularJS](https://angularjs.org/) starter kit prepped for hosting on [Microsoft Azure](http://azure.microsoft.com/)
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
 ## Getting Started
 
