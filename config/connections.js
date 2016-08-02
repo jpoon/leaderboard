@@ -20,37 +20,18 @@
  */
 
 module.exports.connections = {
-
-  /***************************************************************************
-  *                                                                          *
-  * Local disk storage for DEVELOPMENT ONLY                                  *
-  *                                                                          *
-  * Installed by default.                                                    *
-  *                                                                          *
-  ***************************************************************************/
   localDiskDb: {
     adapter: 'sails-disk'
   },
 
-  /***************************************************************************
-  *                                                                          *
-  * More adapters: https://github.com/balderdashy/sails                      *
-  *                                                                          *
-  ***************************************************************************/
-  sqlitedb: {
-    adapter: 'waterline-sqlite3',
-    filename: './data/leaderboard.sqlite',
-    debug: false
-  },
-
   sqlserver: {
     adapter: 'sails-sqlserver',
-    user: 'cnect',
-    password: 'pass',
-    host: 'abc123.database.windows.net', // azure database
-    database: 'mydb',
+    user: process.env.dbuser,
+    password: process.env.dbpassword,
+    host: process.env.sqlserver,
+    database: process.env.dbname,
     options: {
-      encrypt: true   // use this for Azure databases
+      encrypt: true
     }
   }
 };
