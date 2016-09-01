@@ -1,7 +1,7 @@
 
 # Leaderboard [![Deploy to Azure](http://azuredeploy.net/deploybutton.svg)](https://azuredeploy.net/)
 
-[Sails.js](http://sailsjs.org/) powered leaderboard. 
+[Sails.js](http://sailsjs.org/) powered leaderboard currently configured to use [SQL Server](https://github.com/jpoon/leaderboard/blob/master/config/connections.js) as the backing data store. 
 
 ## Getting Started
 
